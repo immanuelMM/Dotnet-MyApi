@@ -3,6 +3,7 @@ using MyApi.Models;
 using MyApi.Interface;
 using Microsoft.EntityFrameworkCore;
 using MyApi.Dtos.Stock;
+using MyApi.Helper;
 
 namespace MyApi.Repository
 {
@@ -32,10 +33,27 @@ namespace MyApi.Repository
         }
 
 
-        public  async Task<List<Stocks>> GetAllStocksAsync()
+        public async Task<List<Stocks>> GetAllStocksAsync(QueryObject query)
         {
-            return await _context.Stocks.Include(c => c.Comments).ToListAsync();
+            var stock = _context.Stocks.Include(c => c.Comments).AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(query.Symbol))
+            {
+                stock = stock.Where(s => s.Symbol.Contains(query.Symbol));
+            }
+
+            if (!string.IsNullOrWhiteSpace(query.CompanyName))
+            {
+                stock = stock.Where(s => s.CompanyName.Contains(query.CompanyName));
+            }
+
+            return await stock.ToListAsync();
         }
+        
+        //public  async Task<List<Stocks>> GetAllStocksAsync()
+        //{
+        //    return await _context.Stocks.Include(c => c.Comments).ToListAsync();
+        //}
 
         public async Task<Stocks?> GetStockByIdAsync(int id)
         {
