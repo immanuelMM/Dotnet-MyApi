@@ -19,12 +19,6 @@ C:\Users\merin\API-Dotnet\MyApi\obj\Debug\net9.0\scopedcss\bundle\MyApi.styles.c
 C:\Users\merin\API-Dotnet\MyApi\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\merin\API-Dotnet\MyApi\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\merin\API-Dotnet\MyApi\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\merin\API-Dotnet\MyApi\obj\Debug\net9.0\staticwebassets\msbuild.MyApi.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\merin\API-Dotnet\MyApi\obj\Debug\net9.0\staticwebassets\msbuild.MyApi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\merin\API-Dotnet\MyApi\obj\Debug\net9.0\staticwebassets\msbuild.build.MyApi.props
-C:\Users\merin\API-Dotnet\MyApi\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.MyApi.props
-C:\Users\merin\API-Dotnet\MyApi\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.MyApi.props
-C:\Users\merin\API-Dotnet\MyApi\obj\Debug\net9.0\staticwebassets.pack.json
 C:\Users\merin\API-Dotnet\MyApi\obj\Debug\net9.0\MyApi.csproj.Up2Date
 C:\Users\merin\API-Dotnet\MyApi\obj\Debug\net9.0\MyApi.dll
 C:\Users\merin\API-Dotnet\MyApi\obj\Debug\net9.0\refint\MyApi.dll
@@ -161,3 +155,8 @@ C:\Users\merin\API-Dotnet\MyApi\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.
 C:\Users\merin\API-Dotnet\MyApi\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\merin\API-Dotnet\MyApi\bin\Debug\net9.0\Newtonsoft.Json.dll
 C:\Users\merin\API-Dotnet\MyApi\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
+C:\Users\merin\API-Dotnet\MyApi\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\merin\API-Dotnet\MyApi\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\merin\API-Dotnet\MyApi\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\merin\API-Dotnet\MyApi\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\merin\API-Dotnet\MyApi\obj\Debug\net9.0\staticwebassets.build.json.cache

@@ -5,6 +5,7 @@ using MyApi.Dtos.Stock;
 using Microsoft.EntityFrameworkCore;
 using MyApi.Interface;
 using MyApi.Repository;
+using MyApi.Helper;
 
 namespace MyApi.Controller
 {
@@ -21,12 +22,12 @@ namespace MyApi.Controller
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetStocks()
+        public async Task<IActionResult> GetStocks([FromQuery] QueryObject query)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             
-            var stocks = await _stockRepository.GetAllStocksAsync();
+            var stocks = await _stockRepository.GetAllStocksAsync(query);
             var stockDtos = stocks.Select(s => s.ToStockDto());
             return Ok(stockDtos);
         }
